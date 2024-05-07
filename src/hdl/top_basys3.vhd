@@ -20,7 +20,13 @@
 --|    s_<signal name>          = state name
 --|
 
---| DOCUMENTATION STATEMENT: C2C Cho, C3C Culp, C3C Leong, C3C Morales
+--| DOCUMENTATION STATEMENT: C2C Cho guided my order of the ALU and how to correctly connect the functions. Showed me that I was missing
+--|                          o_result <= w_result. C3C Culp helped me understand I needed a delay in my controller FSM because
+--|                          when I was clicking btnC it was cycling through my states extremely fast. He showed me the wait in
+--|                          the register proc area of controller FSM and he got that information from Lt Col Trimble. C3C Leong
+--|                          and C3C Morales guided me in finding out how to manage signed and unsigned in the ALU lines for sum
+--|                          and shifts. C3C Harris guided in showing me where to find the VHDL coding for an adder in our 
+--|                          ECE 281 textbook and the lines of code for shifts in teams.
 --+----------------------------------------------------------------------------
 library ieee;
   use ieee.std_logic_1164.all;
